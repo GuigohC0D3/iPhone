@@ -152,7 +152,9 @@ header nav {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background-color: #333;
+    box-shadow: 1px 1px 1px;
+    border: 4px solid #fff; 
+    pointer-events: none;
 }
 
 #image-picker li .description {
@@ -165,18 +167,50 @@ header nav {
     background-color: #394c38;
 }
 
-#green .color {
-    background-color: #394c38;
+#silver .color {
+    background-color: #f1f2ed;
 }
 
-#green .color {
-    background-color: #394c38;
+#golden .color {
+    background-color: #fae7cf;
 }
 
-#green .color {
-    background-color: #394c38;
+#grafite .color {
+    background-color: #44524f;
 }
 
-#green .color {
-    background-color: #394c38;
+#blue .color {
+    background-color: #a7c1d9;
+}
+
+.selected {
+    outline: 2px solid #43a1ff;
+}
+
+/* Mobile */
+@media (max-width: 480) {
+    #navbar li {
+        display: none;
+    }
+
+    #navbar #logo {
+        display: flex;
+    }
+
+    #bottom-header-links a {
+        display: none;
+    }
+
+    #bottom-header-links .btn {
+        display: flex;
+    }
+
+    #main-content {
+        padding: 2rem;
+        overflow: hidden;
+    }
+
+    #main-content #subtitle {
+        font-size: 3rem;
+    }
 }
